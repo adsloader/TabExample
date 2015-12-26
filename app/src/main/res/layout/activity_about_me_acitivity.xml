@@ -8,9 +8,10 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="오랜세월 남몰래 실력을 다듬어온.. \n다크사이드를추구하는 하이브리드형 게이머입니다."
+        android:text="오랜세월 남몰래 실력을 다듬어온.. \n다크사이드를 추구하는 하이브리드형 게이머입니다."
         android:id="@+id/textView"
-
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="7dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -19,10 +20,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:textSize="18sp"
-        android:background="#333333"
+        android:layout_marginTop="14dp"
         android:text="Vintage appMaker"
         android:gravity="center"
-        android:textColor="#22FF22"
         android:id="@+id/textView2"
         android:layout_above="@+id/textView"
         android:layout_alignParentLeft="true"
