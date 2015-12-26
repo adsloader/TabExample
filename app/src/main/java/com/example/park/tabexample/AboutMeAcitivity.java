@@ -1,11 +1,15 @@
 package com.example.park.tabexample;
 
 import android.app.Activity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Window;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.widget.TextView;
 
 public class AboutMeAcitivity extends Activity {
+
+    private TextView myText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,5 +19,23 @@ public class AboutMeAcitivity extends Activity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
 
         setContentView(R.layout.activity_about_me_acitivity);
+
+        // 화면을 설정한다.
+        setUpUI();
+    }
+
+    // 화면을 설정한다.
+    private void setUpUI() {
+        myText = (TextView) findViewById(R.id.textView2);
+
+        // 애니메이션을 만든다. Android에서 제공하는 클래스
+        Animation anim = new AlphaAnimation(0.0f, 1.0f);
+        anim.setDuration(1500);
+        anim.setStartOffset(20);
+        anim.setRepeatMode(Animation.REVERSE);
+        anim.setRepeatCount(Animation.INFINITE);
+
+        // 애니메이션을 textview에 붙인다.
+        myText.startAnimation(anim);
     }
 }
