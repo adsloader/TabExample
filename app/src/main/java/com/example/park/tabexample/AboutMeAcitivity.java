@@ -32,6 +32,7 @@ public class AboutMeAcitivity extends Activity {
         Animation anim = new AlphaAnimation(0.0f, 1.0f);
         anim.setDuration(1500);
         anim.setStartOffset(20);
+        // 애니메이션 모드설정
         anim.setRepeatMode(Animation.REVERSE);
         anim.setRepeatCount(Animation.INFINITE);
 
