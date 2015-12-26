@@ -5,33 +5,31 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/fire"
     tools:context="com.example.park.tabexample.historyActivity">
-
-    <ImageView
-        android:layout_width="140dp"
-        android:layout_height="140dp"
-        android:id="@+id/imageView"
-        android:src="@drawable/about"
-         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="History of my Life"
+        android:text="my life for auir"
         android:id="@+id/textView3"
-        android:layout_alignTop="@+id/imageView"
-        android:layout_toRightOf="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView"
-        android:layout_marginTop="28dp" />
+        android:textColor="#FF0000"
+        android:layout_marginTop="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_alignEnd="@+id/textView4" />
 
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="history\nhistory\nhistory\nhistory\nhistory\n"
-        android:background="#eeeeee"
+        android:text="10 때는 열받으며 살고\n20대에는 고민하며 살고\n30대는 투쟁하며 살았으며\n40대는 느끼며 산다.\n인생은 설계하는 것이 아니라\n느끼는 것이다.\n"
+        android:textColor="#eeeeee"
         android:id="@+id/textView4"
-        android:layout_below="@+id/imageView"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 </RelativeLayout>

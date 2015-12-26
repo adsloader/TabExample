@@ -2,30 +2,50 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/about"
     tools:context="com.example.park.tabexample.AboutMeAcitivity">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="오랜세월 남몰래 실력을 다듬어온.. \n다크사이드를 추구하는 하이브리드형 게이머입니다."
-        android:id="@+id/textView"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="7dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:layout_marginTop="14dp"
-        android:text="Vintage appMaker"
-        android:gravity="center"
-        android:id="@+id/textView2"
-        android:layout_above="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="19dp" />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView2"
+            android:src="@drawable/about"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView"
+            android:layout_alignEnd="@+id/textView"
+            android:alpha="0.5" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="14dp"
+            android:text="Vintage appMaker"
+            android:gravity="center"
+            android:id="@+id/textView2"
+            android:textColor="#000000"
+            android:layout_above="@+id/textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="19dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="오랜세월 남몰래 실력을 다듬어온.. \n다크사이드를 추구하는 하이브리드형 게이머입니다."
+            android:id="@+id/textView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="27dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal|bottom" />
+
+    </FrameLayout>
+
 </RelativeLayout>
